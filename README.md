@@ -6,3 +6,5 @@ Generated 512x512 (3 rgb) canvas by using np.zeros. It generates a black canvas 
 To change the canvas color from black to white we can add 255 to  np.zeros . (0, 0, 0) --> (255, 255, 255) 
 
 ![white canvas np.zeros](https://snipboard.io/zG3PwB.jpg)
+
+
