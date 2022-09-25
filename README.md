@@ -1,5 +1,8 @@
 # ComputerVisionBasicsWithCV2
 
+> Computer Vision Basics With opencv is a public repository which contains many project related to operations with cv2
+
+
 Generated 512x512 (3 rgb) canvas by using np.zeros. It generates a black canvas for us.
 ![canvas](https://snipboard.io/93Y78g.jpg)
 
