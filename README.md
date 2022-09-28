@@ -10,4 +10,11 @@ To change the canvas color from black to white we can add 255 to  np.zeros . (0,
 
 ![white canvas np.zeros](https://snipboard.io/zG3PwB.jpg)
 
+------------
 
+
+
+### Real Time Shape Detection
+By using my webcam I detected shapes and also added trackbar to control hsv range. Playing around with the lower and upper color ranges we can actually increase the accuracy . There is an example from this project. I tried the project with a paper which has a pentagon on it. (Also paper has circle shaped holes and we could detect that too.) 
+
+![](https://snipboard.io/Lphvfd.jpg)
