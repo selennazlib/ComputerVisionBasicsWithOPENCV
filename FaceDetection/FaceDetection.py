@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[16]:
+# In[9]:
 
 
 # ON IMAGES
@@ -37,5 +37,33 @@ for (x, y, w, h) in faces:
     
 cv2.imshow('Image', img)
 cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+# In[11]:
+
+
+# ON WEBCAM
+cascade_path = 'C:\\Users\\S BASA\\Desktop\\ComputerVision(CV2)\\FaceDetection\\frontalface.xml'
+
+cap = cv2.VideoCapture(0)
+face_cascade = cv2.CascadeClassifier(cascade_path)
+
+while True:
+    ret, frame = cap.read()
+    frame = cv2.flip(frame, 1)
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    
+    faces = face_cascade.detectMultiScale(gray, 1.3, 3)
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (160, 32, 240), 1)
+       
+    cv2.imshow('Frame', frame)
+    
+    if cv2.waitKey(2) & 0xFF == ord('q'):
+        break
+    
+    
+cap.release()
 cv2.destroyAllWindows()
 
